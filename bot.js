@@ -3,11 +3,11 @@ const tmi = require('tmi.js');
 // Define configuration options
 const opts = {
   identity: {
-    username: 'dkillabot',
-      password: 'oauth:mqtc5fgxsfmlb471ygldts0vrea2dk'
+    username: process.env.BOT_USERNAME,
+      password: process.env.OAUTH_TOKEN
         },
         channels: [
-        'dkillaxx'
+        process.env.CHANNEL_NAME
           ]
           };
           // Create a client with our options
